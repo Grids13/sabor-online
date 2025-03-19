@@ -1,0 +1,408 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(230, 235, 249);
+    margin: 0;
+    padding: 0;
+}
+.menu h1 {
+    font-family: "Crete Round", sans-serif;
+    color: rgb(227, 236, 243);
+    font-size: 30px;
+    
+}
+ h2 {
+    color: rgb(81, 81, 183);
+    text-align: center;
+    font-family: "Crete Round", sans-serif;
+}
+                     /* MENU */
+.menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(123, 68, 174);
+    height: 80px;
+    box-shadow:1px 1px 4px gray;
+}
+.name-logo { 
+    margin-right: 500px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    margin: 0;
+    width: 60px;
+}
+
+    
+.nav li {
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 10px;
+    margin: 0 20px;
+    color: aliceblue;
+    font-family: "Crete Round", sans-serif;
+    position: relative;
+
+}
+
+.nav li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color:rgb(222, 209, 230) ;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav li:hover::after {
+    width: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+                                   /* HERO */   
+.hero {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    
+
+}
+
+
+.main-text {
+    font-size:50px ;
+    /* padding-left: 80px; */
+    padding-top: 80px;
+    margin-bottom: 0;
+    padding-left: 60px;
+    font-family: "Crete Round", sans-serif;
+    font-weight: 600;
+    color: rgb(40, 40, 40);
+  
+}
+
+
+.sub-text {
+    margin-top: 20px;
+    margin-left: 60px;
+    font-family: "Crete Round", sans-serif; 
+    white-space: wrap;
+    padding-bottom: 20px;
+      }
+
+ 
+.cardapio-btn {
+    text-decoration: none;
+    border: none;
+    padding: 15px;
+    margin-left:60px;
+    background-color: rgb(124, 67, 177);
+    color: white;
+    font-family: "Crete Round", sans-serif ;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.413);
+    transition: transform 0.3s ease-in-out;
+}
+.cardapio-btn:hover {
+    background-color: rgb(100, 0, 139);
+}
+
+.fone-btn {
+    text-decoration: none;
+    border: none;
+    padding: 15px;
+    background-color: rgb(176, 137, 212);
+    font-family: "Roboto";
+    margin-left:20px ;
+    font-weight: 600;
+    padding-top:15px ;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    color: rgb(248, 242, 242);
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.413);
+    
+}
+
+.fa-solid {
+    
+    margin-right: 6px;
+    color: aliceblue;
+    padding-top:3px;
+    border-radius: 8px;
+}
+
+.icons  {
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 13px;
+    transition: transform 0.3s ease-in-out;
+      
+}
+
+.icons i {
+    margin-left:  10px;
+    color: white;
+    padding: 7px;
+    background-color: rgb(124, 67, 177);
+    border-radius: 7px;
+    box-shadow:  2px 3px 5px rgba(0, 0, 0, 0.413);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons i:hover {
+    background-color: rgb(100, 0, 139);
+}
+
+.img-hero {
+    width: 900px;
+    font-weight: 400;
+}
+
+
+
+                                   /* CARDAPIO */
+
+.cardapio-texts {
+    font-weight: 700;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carda-name {
+    color:rgb(40, 40, 40) ;
+    font-size: 30px;
+    font-family: "Crete Round";
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.carda-frase {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container-food {
+    margin-top: 100px;
+    margin-left: 15%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-; */
+}
+
+.card {
+    box-shadow:1px 1px 4px gray;
+    background-color: white;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+li {
+    font-size: 23px;
+    text-align: left;
+    /* font-family: "Crete Round", sans-serif; */
+    text-align: left;
+}
+.comida {
+    color: rgb(4, 3, 10);
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.description {
+    font-size: 15px;
+    padding-left: 20px;
+}
+.preco {
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 15px;
+    font-size:20px;
+    color: coral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+
+}
+
+.card:hover {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+                                        /* AVALIAÇÕES */
+ 
+.reviews-text-main {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    color:rgb(40, 40, 40);
+    font-weight: 700;
+    font-size: 30px;
+    font-family:"Crete Round" ;
+}
+
+.review {
+   display: flex;
+   align-items: center;
+}
+
+.review-img {
+   width: 700px;
+}
+
+.cards--texts {
+    flex-direction: column;
+}
+
+
+ .reviews-texts-title {
+    color:rgb(81, 81, 183) ;
+    font-weight: 700;
+    font-size: 40px;
+    font-family:"Crete Round" ;
+
+   
+ }
+
+ .reviews-cards {
+    display: flex;
+    gap: 10px;
+    
+ }
+
+ .card-review {
+    box-shadow:1px 1px 4px gray;
+    background-color:rgb(174, 174, 216);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    transition: 0.3s;
+ }
+ 
+ .users-img {
+    width:90px;
+    height: 90px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    
+
+ }
+
+ .name {
+    text-align: center;
+    font-family:"Crete Round" ;
+    font-size: 20px;
+    font-weight: 700;
+    color:  rgb(40, 40, 40);
+ }
+ .avalia {
+    font-family:"Crete Round" ;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 10px;
+    color:  rgb(54, 53, 53);
+    padding-top: 10px;
+    text-align: center;
+   
+ }
+ .stars {
+    display: inline;
+    color: gold;
+    font-size: 30px;
+    margin-left: 35px;
+ }
+ 
+ .footer {
+    background-color: rgb(176, 137, 212);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+ 
+
+ .icons-contact {
+    color: rgb(40, 40, 40);
+    display: flex;
+    gap: 15px;
+
+   
+ }
+ .icons-contact li {
+    background-color: aliceblue;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 2px;
+    border-radius: 7px;
+ }
+ .icons-contact i {
+    font-size: 15px;
+    
+ }
+
+ .icons-contact a {
+    text-decoration: none;
+    color: inherit;
+ }
+
+ .copyright  {
+    margin: 0;
+    color: rgb(208, 208, 208);
+    padding-right: 900px;
+   
+    
+ }
+
+
+ .copyright i {
+    font-size: 13px;
+ }
+
+ .copyright span {
+    margin-left: 2px;
+ }
